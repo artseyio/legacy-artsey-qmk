@@ -6,6 +6,7 @@ QMK Files for ARTSEY
 ## Step 1. Make sure Combos and Mousekeys are enabled in rules.h of your keyboard. Add these lines
 
 `COMBO_ENABLE = yes
+
 MOUSEKEYS_ENABLE = yes`
 
 ## Step 2. Copy these files into the /keyboard/your_keyboard/ folder
