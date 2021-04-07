@@ -2,13 +2,22 @@
 
 # How to Build:
 
-## Step 1. Make sure Combos and Mousekeys are enabled in rules.h of your keyboard.  
-Add these lines:
+## Step 1. Clone "Early Combos" repo.
+ARTSEY Relies on experimental QMK combo features that are available in the linked repo below. 
+
+https://github.com/sevanteri/qmk_firmware/tree/early_combo
+
+## Step 2. Create or find your keyboard. 
+
+Create or find your keyboard as usual for making a QMK keymap. 
+
+## Step 3. Make sure Combos and Mousekeys are enabled in rules.h of your keyboard.  
+Add these lines to your `rules.h`
 
 `COMBO_ENABLE = yes`  
 `MOUSEKEYS_ENABLE = yes`
 
-## Step 2. Copy these files into the /keyboard/your_keyboard/ folder
+## Step 4. Copy these files into the /keyboards/your_keyboard/ folder
 
 `artsey.c`  
 `artsey.h`  
@@ -17,7 +26,7 @@ Add these lines:
 `keymap_combo.h`  
 `macros.c`  
 
-## Step 3. Create your keymap.   
+## Step 5. Create your keymap.   
 Include this somewhere near the top of your keymap:
 
 `#include "artsey.h"`  
