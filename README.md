@@ -17,7 +17,7 @@ Add these lines:
 `keymap_combo.h`  
 `macros.c`  
 
-## Step 3. Create your keymap using one of the example keymaps.  
+## Step 3. Create your keymap.   
 Include this somewhere near the top of your keymap:
 
 `#include "artsey.h"`  
@@ -34,3 +34,5 @@ Include this somewhere near the top of your keymap:
 `A_Y`  
 `A_I`  
 `A_O`  
+
+Reference the example keymaps for an example of an 8-key left and 8-key right-handed layout. 
