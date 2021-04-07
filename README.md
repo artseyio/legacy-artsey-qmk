@@ -1,5 +1,4 @@
-# artsey-qmk
-QMK Files for ARTSEY
+# QMK Files for ARTSEY
 
 # How to Build:
 
