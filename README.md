@@ -5,17 +5,17 @@ QMK Files for ARTSEY
 
 ## Step 1. Make sure Combos and Mousekeys are enabled in rules.h of your keyboard. Add these lines
 
-COMBO_ENABLE = yes
-MOUSEKEYS_ENABLE = yes
+`COMBO_ENABLE = yes
+MOUSEKEYS_ENABLE = yes`
 
 ## Step 2. Copy these files into the /keyboard/your_keyboard/ folder
 
-artsey.c
+`artsey.c
 artsey.h
 artsey_basic.def
 combos.def
 keymap_combo.h
-macros.c
+macros.c`
 
 ## Step 3. Create your keymap using one of the example keymaps. 
 
