@@ -5,7 +5,10 @@
 ## Step 1. Clone "Early Combos" repo.
 ARTSEY Relies on experimental QMK combo features that are available in the linked repo below. 
 
+### Clone This Repo
 https://github.com/sevanteri/qmk_firmware/tree/early_combo
+
+### Run ``make git-submodule`` 
 
 ## Step 2. Create or find your keyboard. 
 
