@@ -1,7 +1,6 @@
 #pragma once
 #include "quantum.h"
 
-
 enum layers {
   _ARTSEY_BASE = 0,
   _ARTSEY_NUM,

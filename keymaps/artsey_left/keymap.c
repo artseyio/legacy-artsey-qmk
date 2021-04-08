@@ -1,8 +1,5 @@
-#include QMK_KEYBOARD_H
-#include "quantum.h"
-
 //REPLACE THIS WITH YOUR KEYBOARD.h 
-#include "macro3.h"
+#include "keyboard.h"
 
 //MAKE SURE THESE ARE INCLUDED
 #include "artsey.h"
