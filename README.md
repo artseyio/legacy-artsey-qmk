@@ -8,7 +8,7 @@ ARTSEY Relies on experimental QMK combo features that are available in the linke
 ### Clone This Repo
 https://github.com/sevanteri/qmk_firmware/tree/early_combo
 
-### Run ``make git-submodule`` 
+### Run ``qmk setup`` and ``make git-submodule``. 
 
 ## Step 2. Create or find your keyboard. 
 
