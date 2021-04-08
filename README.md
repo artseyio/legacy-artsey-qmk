@@ -2,13 +2,15 @@
 
 # How to Build:
 
-## Step 1. Clone "Early Combos" repo.
+## Step 1. Set up QMK and Clone "Early Combos" repo.
 ARTSEY Relies on experimental QMK combo features that are available in the linked repo below. 
 
-### Clone This Repo
-https://github.com/sevanteri/qmk_firmware/tree/early_combo
+### Setup QMK According to the Official Guide.
 
-### Run ``qmk setup`` and ``make git-submodule``. 
+https://beta.docs.qmk.fm/tutorial/newbs_getting_started
+
+### Merge This Repo
+https://github.com/sevanteri/qmk_firmware/tree/early_combo
 
 ## Step 2. Create or find your keyboard. 
 
