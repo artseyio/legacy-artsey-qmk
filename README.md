@@ -41,14 +41,14 @@ Include this somewhere near the top of your keymap:
 *Create Base, Number, Nav, Symbol, Bracket, Mouse, and Custom Layers.*
 You will need to create 7 new layers on your keyboard each with 8 keycodes of the form:  
 
-`A_LAYER_A
-A_LAYER_R
-A_LAYER_T
-A_LAYER_S
-A_LAYER_E
-A_LAYER_Y
-A_LAYER_I
-A_LAYER_O`
+	A_LAYER_A
+	A_LAYER_R
+	A_LAYER_T
+	A_LAYER_S
+	A_LAYER_E
+	A_LAYER_Y
+	A_LAYER_I
+	A_LAYER_O
 
 `[_A_BASE] = LAYOUT(A_BASE_A,A_BASE_R,A_BASE_T,A_BASE_S,
 A_BASE_E,A_BASE_Y,A_BASE_I,A_BASE_O),
