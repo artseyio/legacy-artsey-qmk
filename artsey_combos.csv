@@ -19,19 +19,19 @@ EYI,BASE,tap_code(KC_L)
 EYO,BASE,
 EIO,BASE,tap_code(KC_P)
 YIO,BASE,tap_code(KC_M)
-ARTS,BASE,tap_code(KC_Z)
+ARTS,BASE,
 AYI,BASE,tap_code(KC_QUOT)
-AY,BASE,tap_code(KC_DOT)
-AI,BASE,tap_code(KC_COMMA)
+AY,BASE,tap_code(KC_COMMA)
+AI,BASE,tap_code(KC_DOT)
 TI,BASE,"SEND_STRING(""!"")"
 AO,BASE,tap_code(KC_SLSH)
-RE,BASE,register_code(KC_BSPC)
+RE,BASE,tap_code(KC_BSPC)
 RTSE,BASE,set_oneshot_mods(MOD_BIT(KC_LSHIFT))
 AE,BASE,tap_code(KC_ENTER)
 ARO,BASE,tap_code(KC_ESC)
 SE,BASE,set_oneshot_mods(MOD_BIT(KC_LCTRL))
-SY,BASE,set_oneshot_mods(MOD_BIT(KC_LALT))
-SI,BASE,set_oneshot_mods(MOD_BIT(KC_LGUI))
+SY,BASE,set_oneshot_mods(MOD_BIT(KC_LGUI))
+SI,BASE,
 EYIO,BASE,tap_code(KC_SPACE)
 ARTO,BASE,tap_code(KC_TAB)
 RY,BASE,"        if (!is_shift_lock_active) {

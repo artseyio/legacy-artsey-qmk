@@ -124,12 +124,6 @@ tap_code(KC_M);
 }
 else {}
  break;
-case A_BASE_ARTS:
-if(record->event.pressed) {
-tap_code(KC_Z);
-}
-else {}
- break;
 case A_BASE_AYI:
 if(record->event.pressed) {
 tap_code(KC_QUOT);
@@ -138,13 +132,13 @@ else {}
  break;
 case A_BASE_AY:
 if(record->event.pressed) {
-tap_code(KC_DOT);
+tap_code(KC_COMMA);
 }
 else {}
  break;
 case A_BASE_AI:
 if(record->event.pressed) {
-tap_code(KC_COMMA);
+tap_code(KC_DOT);
 }
 else {}
  break;
@@ -162,7 +156,7 @@ else {}
  break;
 case A_BASE_RE:
 if(record->event.pressed) {
-register_code(KC_BSPC);
+tap_code(KC_BSPC);
 }
 else {}
  break;
@@ -191,12 +185,6 @@ set_oneshot_mods(MOD_BIT(KC_LCTRL));
 else {}
  break;
 case A_BASE_SY:
-if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
-}
-else {}
- break;
-case A_BASE_SI:
 if(record->event.pressed) {
 set_oneshot_mods(MOD_BIT(KC_LGUI));
 }
