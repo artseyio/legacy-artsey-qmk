@@ -32,13 +32,14 @@ Add these lines to your `rules.h`
 	macros.c
 
 ## Step 5. Create your keymap.   
-Include this somewhere near the top of your keymap:
+### ADD Includes
+Include this somewhere near the top of your keymap:  
 
 	#include "artsey.h"
 	#include "keymap_combo.h"
 	#include "artsey.c"
 
-*Create Base, Number, Nav, Symbol, Bracket, Mouse, and Custom Layer  
+### Create Base, Number, Nav, Symbol, Bracket, Mouse, and Custom Layer  
 
 The 7 layers are `_A_BASE`,`_A_NUM`,`_A_NAV`,`_A_SYM`,`_A_BRAC`,`_A_MOU`,and `_A_CUSTOM`. You will need to create these 7 new layers on your keyboard and map the 8 artsey keycodes on each layer. The keycodes are of the form:
 
@@ -50,6 +51,8 @@ The 7 layers are `_A_BASE`,`_A_NUM`,`_A_NAV`,`_A_SYM`,`_A_BRAC`,`_A_MOU`,and `_A
 	A_LAYER_Y
 	A_LAYER_I
 	A_LAYER_O
+	
+### Full Example
 
 An example keymap for an 8-key right handed board might look like this:
 
