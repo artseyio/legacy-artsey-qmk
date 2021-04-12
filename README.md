@@ -19,27 +19,28 @@ Create or find your keyboard as usual for making a QMK keymap.
 ## Step 3. Make sure Combos and Mousekeys are enabled in rules.h of your keyboard.  
 Add these lines to your `rules.h`
 
-`COMBO_ENABLE = yes`  
-`MOUSEKEYS_ENABLE = yes`
+	COMBO_ENABLE = yes
+	MOUSEKEYS_ENABLE = yes
 
 ## Step 4. Copy these files into the /keyboards/your_keyboard/ folder
 
-`artsey.c`  
-`artsey.h`  
-`artsey_basic.def`  
-`combos.def`  
-`keymap_combo.h`  
-`macros.c`  
+	artsey.c  
+	artsey.h
+	artsey_basic.def
+	combos.def
+	keymap_combo.h
+	macros.c
 
 ## Step 5. Create your keymap.   
 Include this somewhere near the top of your keymap:
 
-`#include "artsey.h"`  
-`#include "keymap_combo.h"`  
-`#include "artsey.c"`  
+	#include "artsey.h"
+	#include "keymap_combo.h"
+	#include "artsey.c"
 
-*Create Base, Number, Nav, Symbol, Bracket, Mouse, and Custom Layers.*
-You will need to create 7 new layers on your keyboard each with 8 keycodes of the form:  
+*Create Base, Number, Nav, Symbol, Bracket, Mouse, and Custom Layer  
+
+The 7 layers are `_A_BASE`,`_A_NUM`,`_A_NAV`,`_A_SYM`,`_A_BRAC`,`_A_MOU`,and `_A_CUSTOM`. You will need to create these 7 new layers on your keyboard and map the 8 artsey keycodes on each layer. The keycodes are of the form:
 
 	A_LAYER_A
 	A_LAYER_R
@@ -50,29 +51,47 @@ You will need to create 7 new layers on your keyboard each with 8 keycodes of th
 	A_LAYER_I
 	A_LAYER_O
 
-`[_A_BASE] = LAYOUT(A_BASE_A,A_BASE_R,A_BASE_T,A_BASE_S,
-A_BASE_E,A_BASE_Y,A_BASE_I,A_BASE_O),
+An example keymap for an 8-key right handed board might look like this:
 
-[_A_NUM] = LAYOUT(A_NUM_A,A_NUM_R,A_NUM_T,A_NUM_S,
-A_NUM_E,A_NUM_Y,A_NUM_I,A_NUM_O),
+	//REPLACE THIS WITH YOUR KEYBOARD.h 
+	#include "keyboard.h"
 
-[_A_NAV] = LAYOUT(A_NAV_A,A_NAV_R,A_NAV_T,A_NAV_S,
-A_NAV_E,A_NAV_Y,A_NAV_I,A_NAV_O),
+	//MAKE SURE THESE ARE INCLUDED
+	#include "artsey.h"
+	#include "keymap_combo.h"
+	#include "artsey.c"
 
-[_A_SYM] = LAYOUT(A_SYM_A,A_SYM_R,A_SYM_T,A_SYM_S,
-A_SYM_E,A_SYM_Y,A_SYM_I,A_SYM_O),
+	const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-[_A_BRAC] = LAYOUT(A_BRAC_A,A_BRAC_R,A_BRAC_T,A_BRAC_S,
-A_BRAC_E,A_BRAC_Y,A_BRAC_I,A_BRAC_O),
+	[_A_BASE] = LAYOUT(A_BASE_A,A_BASE_R,A_BASE_T,A_BASE_S,
+	A_BASE_E,A_BASE_Y,A_BASE_I,A_BASE_O),
 
-[_A_MOU] = LAYOUT(A_MOU_A,A_MOU_R,A_MOU_T,A_MOU_S,
-A_MOU_E,A_MOU_Y,A_MOU_I,A_MOU_O),
+	[_A_NUM] = LAYOUT(A_NUM_A,A_NUM_R,A_NUM_T,A_NUM_S,
+	A_NUM_E,A_NUM_Y,A_NUM_I,A_NUM_O),
 
-[_A_CUSTOM] = LAYOUT(A_CUSTOM_A,A_CUSTOM_R,A_CUSTOM_T,A_CUSTOM_S,
-A_CUSTOM_E,A_CUSTOM_Y,A_CUSTOM_I,A_CUSTOM_O),`
+	[_A_NAV] = LAYOUT(A_NAV_A,A_NAV_R,A_NAV_T,A_NAV_S,
+	A_NAV_E,A_NAV_Y,A_NAV_I,A_NAV_O),
+
+	[_A_SYM] = LAYOUT(A_SYM_A,A_SYM_R,A_SYM_T,A_SYM_S,
+	A_SYM_E,A_SYM_Y,A_SYM_I,A_SYM_O),
+
+	[_A_BRAC] = LAYOUT(A_BRAC_A,A_BRAC_R,A_BRAC_T,A_BRAC_S,
+	A_BRAC_E,A_BRAC_Y,A_BRAC_I,A_BRAC_O),
+
+	[_A_MOU] = LAYOUT(A_MOU_A,A_MOU_R,A_MOU_T,A_MOU_S,
+	A_MOU_E,A_MOU_Y,A_MOU_I,A_MOU_O),
+
+	[_A_CUSTOM] = LAYOUT(A_CUSTOM_A,A_CUSTOM_R,A_CUSTOM_T,A_CUSTOM_S,
+	A_CUSTOM_E,A_CUSTOM_Y,A_CUSTOM_I,A_CUSTOM_O),
 
 
-Reference the example keymaps for an example of an 8-key left and 8-key right-handed layout. 
+	};
+
+
+For a left handed layout, simply mirror-image the keycodes. For instance, the base layer would look like:
+
+	[_A_BASE] = LAYOUT(A_BASE_A,A_BASE_R,A_BASE_T,A_BASE_S,
+	A_BASE_E,A_BASE_Y,A_BASE_I,A_BASE_O),
 
 # How to Modify:
 
