@@ -160,7 +160,79 @@ tap_code(KC_BSPC);
 }
 else {}
  break;
+case A_NUM_RE:
+if(record->event.pressed) {
+tap_code(KC_BSPC);
+}
+else {}
+ break;
+case A_SYM_RE:
+if(record->event.pressed) {
+tap_code(KC_BSPC);
+}
+else {}
+ break;
+case A_BRAC_RE:
+if(record->event.pressed) {
+tap_code(KC_BSPC);
+}
+else {}
+ break;
+case A_NAV_RE:
+if(record->event.pressed) {
+tap_code(KC_BSPC);
+}
+else {}
+ break;
+case A_MOU_RE:
+if(record->event.pressed) {
+tap_code(KC_BSPC);
+}
+else {}
+ break;
+case A_CUSTOM_RE:
+if(record->event.pressed) {
+tap_code(KC_BSPC);
+}
+else {}
+ break;
 case A_BASE_RTSE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+}
+else {}
+ break;
+case A_NUM_RTSE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+}
+else {}
+ break;
+case A_SYM_RTSE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+}
+else {}
+ break;
+case A_BRAC_RTSE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+}
+else {}
+ break;
+case A_NAV_RTSE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+}
+else {}
+ break;
+case A_MOU_RTSE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+}
+else {}
+ break;
+case A_CUSTOM_RTSE:
 if(record->event.pressed) {
 set_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
@@ -172,7 +244,79 @@ tap_code(KC_ENTER);
 }
 else {}
  break;
+case A_NUM_AE:
+if(record->event.pressed) {
+tap_code(KC_ENTER);
+}
+else {}
+ break;
+case A_SYM_AE:
+if(record->event.pressed) {
+tap_code(KC_ENTER);
+}
+else {}
+ break;
+case A_BRAC_AE:
+if(record->event.pressed) {
+tap_code(KC_ENTER);
+}
+else {}
+ break;
+case A_NAV_AE:
+if(record->event.pressed) {
+tap_code(KC_ENTER);
+}
+else {}
+ break;
+case A_MOU_AE:
+if(record->event.pressed) {
+tap_code(KC_ENTER);
+}
+else {}
+ break;
+case A_CUSTOM_AE:
+if(record->event.pressed) {
+tap_code(KC_ENTER);
+}
+else {}
+ break;
 case A_BASE_ARO:
+if(record->event.pressed) {
+tap_code(KC_ESC);
+}
+else {}
+ break;
+case A_NUM_ARO:
+if(record->event.pressed) {
+tap_code(KC_ESC);
+}
+else {}
+ break;
+case A_SYM_ARO:
+if(record->event.pressed) {
+tap_code(KC_ESC);
+}
+else {}
+ break;
+case A_BRAC_ARO:
+if(record->event.pressed) {
+tap_code(KC_ESC);
+}
+else {}
+ break;
+case A_NAV_ARO:
+if(record->event.pressed) {
+tap_code(KC_ESC);
+}
+else {}
+ break;
+case A_MOU_ARO:
+if(record->event.pressed) {
+tap_code(KC_ESC);
+}
+else {}
+ break;
+case A_CUSTOM_ARO:
 if(record->event.pressed) {
 tap_code(KC_ESC);
 }
@@ -184,13 +328,163 @@ set_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
+case A_NUM_SE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LCTRL));
+}
+else {}
+ break;
+case A_SYM_SE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LCTRL));
+}
+else {}
+ break;
+case A_BRAC_SE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LCTRL));
+}
+else {}
+ break;
+case A_NAV_SE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LCTRL));
+}
+else {}
+ break;
+case A_MOU_SE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LCTRL));
+}
+else {}
+ break;
+case A_CUSTOM_SE:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LCTRL));
+}
+else {}
+ break;
 case A_BASE_SY:
 if(record->event.pressed) {
 set_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
+case A_NUM_SY:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LGUI));
+}
+else {}
+ break;
+case A_SYM_SY:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LGUI));
+}
+else {}
+ break;
+case A_BRAC_SY:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LGUI));
+}
+else {}
+ break;
+case A_NAV_SY:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LGUI));
+}
+else {}
+ break;
+case A_MOU_SY:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LGUI));
+}
+else {}
+ break;
+case A_CUSTOM_SY:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LGUI));
+}
+else {}
+ break;
+case A_BASE_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
+case A_NUM_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
+case A_SYM_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
+case A_BRAC_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
+case A_NAV_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
+case A_MOU_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
+case A_CUSTOM_SI:
+if(record->event.pressed) {
+set_oneshot_mods(MOD_BIT(KC_LALT));
+}
+else {}
+ break;
 case A_BASE_EYIO:
+if(record->event.pressed) {
+tap_code(KC_SPACE);
+}
+else {}
+ break;
+case A_NUM_EYIO:
+if(record->event.pressed) {
+tap_code(KC_SPACE);
+}
+else {}
+ break;
+case A_SYM_EYIO:
+if(record->event.pressed) {
+tap_code(KC_SPACE);
+}
+else {}
+ break;
+case A_BRAC_EYIO:
+if(record->event.pressed) {
+tap_code(KC_SPACE);
+}
+else {}
+ break;
+case A_NAV_EYIO:
+if(record->event.pressed) {
+tap_code(KC_SPACE);
+}
+else {}
+ break;
+case A_MOU_EYIO:
+if(record->event.pressed) {
+tap_code(KC_SPACE);
+}
+else {}
+ break;
+case A_CUSTOM_EYIO:
 if(record->event.pressed) {
 tap_code(KC_SPACE);
 }
@@ -202,7 +496,121 @@ tap_code(KC_TAB);
 }
 else {}
  break;
+case A_NUM_ARTO:
+if(record->event.pressed) {
+tap_code(KC_TAB);
+}
+else {}
+ break;
+case A_SYM_ARTO:
+if(record->event.pressed) {
+tap_code(KC_TAB);
+}
+else {}
+ break;
+case A_BRAC_ARTO:
+if(record->event.pressed) {
+tap_code(KC_TAB);
+}
+else {}
+ break;
+case A_NAV_ARTO:
+if(record->event.pressed) {
+tap_code(KC_TAB);
+}
+else {}
+ break;
+case A_MOU_ARTO:
+if(record->event.pressed) {
+tap_code(KC_TAB);
+}
+else {}
+ break;
+case A_CUSTOM_ARTO:
+if(record->event.pressed) {
+tap_code(KC_TAB);
+}
+else {}
+ break;
 case A_BASE_RY:
+if(record->event.pressed) {
+        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        };
+}
+else {}
+ break;
+case A_NUM_RY:
+if(record->event.pressed) {
+        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        };
+}
+else {}
+ break;
+case A_SYM_RY:
+if(record->event.pressed) {
+        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        };
+}
+else {}
+ break;
+case A_BRAC_RY:
+if(record->event.pressed) {
+        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        };
+}
+else {}
+ break;
+case A_NAV_RY:
+if(record->event.pressed) {
+        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        };
+}
+else {}
+ break;
+case A_MOU_RY:
+if(record->event.pressed) {
+        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        };
+}
+else {}
+ break;
+case A_CUSTOM_RY:
 if(record->event.pressed) {
         if (!is_shift_lock_active) {
           is_shift_lock_active = true;
@@ -245,6 +653,36 @@ layer_move(_A_MOU);
 }
 else {}
  break;
+case A_NUM_ATY:
+if(record->event.pressed) {
+layer_move(_A_MOU);
+}
+else {}
+ break;
+case A_SYM_ATY:
+if(record->event.pressed) {
+layer_move(_A_MOU);
+}
+else {}
+ break;
+case A_BRAC_ATY:
+if(record->event.pressed) {
+layer_move(_A_MOU);
+}
+else {}
+ break;
+case A_NAV_ATY:
+if(record->event.pressed) {
+layer_move(_A_MOU);
+}
+else {}
+ break;
+case A_CUSTOM_ATY:
+if(record->event.pressed) {
+layer_move(_A_MOU);
+}
+else {}
+ break;
 case A_MOU_ATY:
 if(record->event.pressed) {
 layer_move(_A_BASE);
@@ -252,6 +690,36 @@ layer_move(_A_BASE);
 else {}
  break;
 case A_BASE_REI:
+if(record->event.pressed) {
+layer_move(_A_NAV);
+}
+else {}
+ break;
+case A_NUM_REI:
+if(record->event.pressed) {
+layer_move(_A_NAV);
+}
+else {}
+ break;
+case A_SYM_REI:
+if(record->event.pressed) {
+layer_move(_A_NAV);
+}
+else {}
+ break;
+case A_BRAC_REI:
+if(record->event.pressed) {
+layer_move(_A_NAV);
+}
+else {}
+ break;
+case A_MOU_REI:
+if(record->event.pressed) {
+layer_move(_A_NAV);
+}
+else {}
+ break;
+case A_CUSTOM_REI:
 if(record->event.pressed) {
 layer_move(_A_NAV);
 }
