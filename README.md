@@ -23,6 +23,7 @@ Add these lines to your `rules.h`
 	MOUSEKEYS_ENABLE = yes
 
 ## Step 4. Copy these files into the /keyboards/your_keyboard/ folder
+These files are found in either the /left_hand or /right_hand folder of this repo. Chose the files from the folder that correspond to whether you are using the left- or right-hand layout. 
 
 	artsey.c  
 	artsey.h
@@ -54,7 +55,7 @@ The 7 layers are `_A_BASE`,`_A_NUM`,`_A_NAV`,`_A_SYM`,`_A_BRAC`,`_A_MOU`,and `_A
 	
 ### Full Example
 
-An example keymap for an 8-key right handed board might look like this:
+Examples keymaps are avilable in each folder. An example keymap for an 8-key right handed board might look like this:
 
 	//REPLACE THIS WITH YOUR KEYBOARD.h 
 	#include "keyboard.h"
@@ -91,7 +92,7 @@ An example keymap for an 8-key right handed board might look like this:
 	};
 
 
-For a left handed layout, simply mirror-image the keycodes. For instance, the base layer would look like:
+For a left handed layout, simply mirror-image the keycodes. For instance, the base layer would look like (see the file in the /left_hand/keymaps/artsey_left/ folder for a full example:
 
 	[_A_BASE] = LAYOUT(A_BASE_S,A_BASE_T,A_BASE_R,A_BASE_A,
 	A_BASE_O,A_BASE_I,A_BASE_Y,A_BASE_E),
