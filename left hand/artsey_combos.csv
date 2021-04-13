@@ -1,0 +1,55 @@
+﻿Code,LAYER,L1U
+AR,BASE,tap_code(KC_F)
+AT,BASE,
+AS,BASE,tap_code(KC_W)
+RT,BASE,tap_code(KC_G)
+RS,BASE,tap_code(KC_V)
+TS,BASE,tap_code(KC_J)
+ART,BASE,tap_code(KC_D)
+ARS,BASE,
+ATS,BASE,tap_code(KC_Q)
+RTS,BASE,tap_code(KC_X)
+EY,BASE,tap_code(KC_C)
+EI,BASE,tap_code(KC_H)
+EO,BASE,tap_code(KC_B)
+YI,BASE,tap_code(KC_U)
+YO,BASE,tap_code(KC_K)
+IO,BASE,tap_code(KC_N)
+EYI,BASE,tap_code(KC_L)
+EYO,BASE,
+EIO,BASE,tap_code(KC_P)
+YIO,BASE,tap_code(KC_M)
+ARTS,BASE,tap_code(KC_Z)
+AYI,BASE,tap_code(KC_QUOT)
+AY,BASE,tap_code(KC_COMMA)
+AI,BASE,tap_code(KC_DOT)
+TI,BASE,"SEND_STRING(""!"")"
+AO,BASE,tap_code(KC_SLSH)
+RE,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",tap_code(KC_BSPC)
+RTSE,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",set_oneshot_mods(MOD_BIT(KC_LSHIFT))
+AE,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",tap_code(KC_ENTER)
+ARO,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",tap_code(KC_ESC)
+SE,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",set_oneshot_mods(MOD_BIT(KC_LCTRL))
+SY,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",set_oneshot_mods(MOD_BIT(KC_LGUI))
+SI,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",set_oneshot_mods(MOD_BIT(KC_LALT))
+EYIO,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",tap_code(KC_SPACE)
+ARTO,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM",tap_code(KC_TAB)
+RY,"BASE,NUM,SYM,BRAC,NAV,MOU,CUSTOM","        if (!is_shift_lock_active) {
+          is_shift_lock_active = true;
+          register_code(KC_LSFT);
+        }
+        else{
+          is_shift_lock_active = false;
+          unregister_code(KC_LSFT);
+        }"
+AR,NUM,tap_code(KC_7)
+RT,NUM,tap_code(KC_8)
+EY,NUM,tap_code(KC_9)
+YI,NUM,tap_code(KC_0)
+ATY,"BASE,NUM,SYM,BRAC,NAV,CUSTOM",layer_move(_A_MOU)
+ATY,MOU,layer_move(_A_BASE)
+REI,"BASE,NUM,SYM,BRAC,MOU,CUSTOM",layer_move(_A_NAV)
+REI,NAV,layer_move(_A_BASE)
+SO,BASE,layer_move(_A_CUSTOM)
+SO,CUSTOM,layer_move(_A_BASE)
+AYIO,BASE,tap_code(KC_CAPS)
