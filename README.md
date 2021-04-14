@@ -17,7 +17,7 @@ https://github.com/sevanteri/qmk_firmware/tree/early_combo
 Create or find your keyboard as usual for making a QMK keymap. 
 
 ## Step 3. Make sure Combos and Mousekeys are enabled in rules.h of your keyboard.  
-Add these lines to your `rules.h`
+Add these lines to your `rules.mk`
 
 	COMBO_ENABLE = yes
 	MOUSEKEYS_ENABLE = yes
