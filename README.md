@@ -12,6 +12,8 @@ https://beta.docs.qmk.fm/tutorial/newbs_getting_started
 ### Merge This Repo
 https://github.com/sevanteri/qmk_firmware/tree/early_combo
 
+If you are unfamiliar with git, a guide for this merge can be found at: https://precondition.github.io/home-row-mods#using-mod-taps-in-combos 
+
 ## Step 2. Create or find your keyboard. 
 
 Create or find your keyboard as usual for making a QMK keymap. 
