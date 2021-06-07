@@ -1,3 +1,4 @@
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 data <- read.csv("artsey_combos.csv")
 fileConn <- file("macros.c")
 
@@ -28,19 +29,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     break;
 "
 for(i in 1:dim(data)[1]){
-	key <- toString(data[i,1])
-	layer <- unlist(strsplit(data[i,2],","))
-	action <- toString(data[i,3])
-	if(!(action==""|action=="NA")){
-		for(j in 1:length(layer)){
-		str = paste(str,"case A_",layer[j],"_",key,":\n",sep="")
-		str = paste(str,"if(record->event.pressed) {\n",sep="")
-		str = paste(str,action,";\n",sep="")
-		str = paste(str,"}\n",sep="")
-		str = paste(str,"else {}\n",sep="")
-		str =paste(str,"break;\n")
-	}
-	}
+  key <- toString(data[i,1])
+  layer <- unlist(strsplit(data[i,2],","))
+  action <- toString(data[i,3])
+  if(!(action==""|action=="NA")){
+    for(j in 1:length(layer)){
+      str = paste(str,"case A_",layer[j],"_",key,":\n",sep="")
+      str = paste(str,"if(record->event.pressed) {\n",sep="")
+      str = paste(str,action,";\n",sep="")
+      str = paste(str,"}\n",sep="")
+      str = paste(str,"else {}\n",sep="")
+      str =paste(str,"break;\n")
+    }
+  }
 }
 
 str =paste(str,"
@@ -74,11 +75,11 @@ enum custom_keycodes {
   LOCK_SHIFT,\n"
 
 for(i in 1:dim(data)[1]){
-key <- toString(data[i,1])
-layer <- unlist(strsplit(data[i,2],","))
-for(j in 1:length(layer)){
-str = paste(str,"A_",layer[j],"_",key,",\n",sep="")
-}
+  key <- toString(data[i,1])
+  layer <- unlist(strsplit(data[i,2],","))
+  for(j in 1:length(layer)){
+    str = paste(str,"A_",layer[j],"_",key,",\n",sep="")
+  }
 }
 
 
@@ -90,21 +91,21 @@ str = paste(str,"A_",layer[j],"_",key,",\n",sep="")
 data <- read.csv("artsey_keycodes.csv")
 
 for(i in 1:dim(data)[1]){
-key <- toString(data[i,1])
-layer <- toString(data[i,2])
-tap <- toString(data[i,3])
-hold <- toString(data[i,4])
-if((tap==""|tap=="NA")){
-str = paste(str,"A_",layer,"_",key,",\n",sep="")
-}
-else if((hold==""|hold=="NA")){
-str = paste(str,"A_",layer,"_",key," = ",sep="")
-str = paste(str,tap,",\n",sep="")
-}
-else{
-str = paste(str,"A_",layer,"_",key," = ",sep="")
-str = paste(str,"LT(",hold,",",tap,"),\n",sep="")
-}
+  key <- toString(data[i,1])
+  layer <- toString(data[i,2])
+  tap <- toString(data[i,3])
+  hold <- toString(data[i,4])
+  if((tap==""|tap=="NA")){
+    str = paste(str,"A_",layer,"_",key,",\n",sep="")
+  }
+  else if((hold==""|hold=="NA")){
+    str = paste(str,"A_",layer,"_",key," = ",sep="")
+    str = paste(str,tap,",\n",sep="")
+  }
+  else{
+    str = paste(str,"A_",layer,"_",key," = ",sep="")
+    str = paste(str,"LT(",hold,",",tap,"),\n",sep="")
+  }
 }
 
 
@@ -120,21 +121,21 @@ data <- read.csv("artsey_combos.csv")
 fileConn <- file("artsey_basic.def")
 str = ""
 for(i in 1:dim(data)[1]){
-layer <- unlist(strsplit(data[i,2],","))
-action <- data[i,3]
-unlisted <- unlist(strsplit(data[i,1],""))
-if(length(unlisted)>1){
-for(j in 1:length(layer)){
-str = paste(str,"COMB(",data[i,1],layer[j],"COMB,",sep="")
-str = paste(str,"A_",layer[j],"_",data[i,1],",",sep="")
-str = paste(str,"A_",layer[j],"_",unlisted[1],sep="")
-for(k in 2:length(unlisted)){
-str = paste(str,",A_",layer[j],"_",unlisted[k],sep="")
-}
-str = paste(str,")\n",sep="")
-}
-}
-
+  layer <- unlist(strsplit(data[i,2],","))
+  action <- data[i,3]
+  unlisted <- unlist(strsplit(data[i,1],""))
+  if(length(unlisted)>1){
+    for(j in 1:length(layer)){
+      str = paste(str,"COMB(",data[i,1],layer[j],"COMB,",sep="")
+      str = paste(str,"A_",layer[j],"_",data[i,1],",",sep="")
+      str = paste(str,"A_",layer[j],"_",unlisted[1],sep="")
+      for(k in 2:length(unlisted)){
+        str = paste(str,",A_",layer[j],"_",unlisted[k],sep="")
+      }
+      str = paste(str,")\n",sep="")
+    }
+  }
+  
 }
 
 

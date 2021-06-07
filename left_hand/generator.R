@@ -1,3 +1,4 @@
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 data <- read.csv("artsey_combos.csv")
 fileConn <- file("macros.c")
 

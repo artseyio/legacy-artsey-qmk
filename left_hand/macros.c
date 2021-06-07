@@ -204,43 +204,43 @@ else {}
  break;
 case A_BASE_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
 case A_NUM_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
 case A_SYM_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
 case A_BRAC_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
 case A_NAV_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
 case A_MOU_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
 case A_CUSTOM_RTSE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LSHIFT));
+add_oneshot_mods(MOD_BIT(KC_LSHIFT));
 }
 else {}
  break;
@@ -330,127 +330,127 @@ else {}
  break;
 case A_BASE_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_NUM_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_SYM_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_BRAC_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_NAV_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_MOU_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_CUSTOM_SE:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LCTRL));
+add_oneshot_mods(MOD_BIT(KC_LCTRL));
 }
 else {}
  break;
 case A_BASE_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_NUM_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_SYM_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_BRAC_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_NAV_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_MOU_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_CUSTOM_SY:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LGUI));
+add_oneshot_mods(MOD_BIT(KC_LGUI));
 }
 else {}
  break;
 case A_BASE_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
 case A_NUM_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
 case A_SYM_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
 case A_BRAC_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
 case A_NAV_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
 case A_MOU_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
 case A_CUSTOM_SI:
 if(record->event.pressed) {
-set_oneshot_mods(MOD_BIT(KC_LALT));
+add_oneshot_mods(MOD_BIT(KC_LALT));
 }
 else {}
  break;
