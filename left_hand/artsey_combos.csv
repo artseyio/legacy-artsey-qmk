@@ -1,4 +1,4 @@
-﻿Code,LAYER,L1U
+﻿CODE,LAYER,ACTION
 AR,BASE,tap_code(KC_F)
 AT,BASE,
 AS,BASE,tap_code(KC_W)
