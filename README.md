@@ -2,7 +2,7 @@
 
 # How to Build:
 
-## Step 1. Set up QMK and Clone "Early Combos" repo.
+## Step 1. Set up QMK.
 ARTSEY Relies on experimental QMK combo features that are available in the linked repo below. 
 
 ### Setup QMK According to the Official Guide. **Make sure you update your QMK if you are using an older version. Features that make ARTSEY possible were added on August, 29, 2021.** 
