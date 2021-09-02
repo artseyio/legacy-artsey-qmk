@@ -3,29 +3,61 @@ data <- read.csv("artsey_combos.csv")
 fileConn <- file("macros.c")
 
 
-str = "bool is_shift_lock_active = false; 
-bool other_key_pressed = false;
-bool is_alt_tab_active = false; // ADD this near the begining of keymap.c;
-uint16_t key_timer = 0;
+str = "bool     is_shift_lock_active = false;
+bool     other_key_pressed    = false;
+bool     is_alt_tab_active    = false;  // ADD this near the begining of keymap.c;
+uint16_t key_timer            = 0;
+uint16_t alt_tab_timer        = 0;  // we will be using them soon.
 
+void matrix_scan_user(void) {  // The very important timer.
+    if (is_alt_tab_active) {
+        if (timer_elapsed(alt_tab_timer) > 500) {
+            unregister_code(KC_LGUI);
+            is_alt_tab_active = false;
+        }
+    }
+}
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-
-
   switch (keycode) {
-
-
-    case LOCK_SHIFT:
-      if (record->event.pressed) {
-        if (!is_shift_lock_active) {
-          is_shift_lock_active = true;
-          register_code(KC_LSFT);
+    case ALT_TAB:
+        if (record->event.pressed) {
+          if (!is_alt_tab_active) {
+            is_alt_tab_active = true;
+            register_code(KC_LALT); // Change me to `KC_LGUI` for OS X
+          }
+          alt_tab_timer = timer_read();
+          register_code(KC_TAB)
+        } else {
+          unregister_code(KC_TAB);
         }
-        else{
-          is_shift_lock_active = false;
-          unregister_code(KC_LSFT);
-        }         
-      } 
+        break;
+      case SHIFT_ALT_TAB:
+        if (record->event.pressed) {
+          if (!is_alt_tab_active) {
+            is_alt_tab_active = true;
+            register_code(KC_LALT); // Change me to `KC_LGUI` for OS X
+          }
+          alt_tab_timer = timer_read();
+          register_code(KC_LSHIFT);
+          register_code(KC_TAB);
+          unregister_code(KC_LSHIFT);
+
+        } else {
+          unregister_code(KC_TAB);
+        }
+        break;
+      case LOCK_SHIFT:
+        if (record->event.pressed) {
+          if (!is_shift_lock_active) {
+            is_shift_lock_active = true;
+            register_code(KC_LSFT);
+          }
+          else{
+            is_shift_lock_active = false;
+            unregister_code(KC_LSFT);
+          }
+        }
     break;
 "
 for(i in 1:dim(data)[1]){
@@ -81,6 +113,8 @@ enum layers {
 
 enum custom_keycodes {
   BASE = SAFE_RANGE,
+  ALT_TAB,\n
+  SHIFT_ALT_TAB,\n
   LOCK_SHIFT,\n"
 
 for(i in 1:dim(data)[1]){
