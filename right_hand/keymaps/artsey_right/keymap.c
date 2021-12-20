@@ -1,10 +1,10 @@
 //REPLACE THIS WITH YOUR KEYBOARD.h 
-#include "keyboard.h"
+//#include "keyboard.h"
 
 //MAKE SURE THESE ARE INCLUDED
 #include "artsey.h"
 #include "keymap_combo.h"
-#include "artsey.c"
+//#include "artsey.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

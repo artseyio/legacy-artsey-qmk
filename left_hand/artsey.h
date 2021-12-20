@@ -2,6 +2,13 @@
 #include "quantum.h"
 
 
+#define LAYOUT( \
+               A, R, T, S, \
+               E, Y, I, O \
+                ) \
+{ \
+    {A, R, T, S, E, Y, I, O} \
+}
 
 enum layers {
   _A_BASE = 0,
