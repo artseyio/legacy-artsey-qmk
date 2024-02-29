@@ -1,4 +1,6 @@
-# QMK Files for ARTSEY
+# This is an archive of legacy artsey qmk files. Please use [this repository](https://github.com/artseyio/qmk-artsey) instead. 
+
+# Legacy QMK Files for ARTSEY
 
 # How to Build:
 
